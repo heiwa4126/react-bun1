@@ -36,7 +36,8 @@ This project was created using `bun init` in bun v1.4.0. [Bun](https://bun.com) 
 
 ### 追加
 
-buildしたコードをサーブするスクリプトを追加しました。
+build したコードをサーブするスクリプトを追加しました。
+API っぽいやつ (src/apiRoutes.ts) も動くようにしました。
 
 ```bash
 bun run build
@@ -46,5 +47,6 @@ bun run preview
 ## TODO
 
 bun だけだとバンドルの minify なんかがやっぱり甘いような気がする。
+とりあえず https://bun.com/blog/bun-bundler 読んで、チャンク分割や、特定モジュールのバンドル除外ができないか調べる。
 
-でもなんか同時に API っぽいものが動いてるのは不思議。
+でもなんか同時に API っぽいものが動いてるのは不思議 → これは Bun.serve() がやってた。
