@@ -46,7 +46,8 @@ bun run preview
 
 ## TODO
 
-bun だけだとバンドルの minify なんかがやっぱり甘いような気がする。
+bun だけだとバンドルのツリーシェイキングや minify なんかが甘いような気がする。
 とりあえず https://bun.com/blog/bun-bundler 読んで、チャンク分割や、特定モジュールのバンドル除外ができないか調べる。
+あと `bun bundle src/index.html ...` って不思議なので、これも調べる。
 
 でもなんか同時に API っぽいものが動いてるのは不思議 → これは Bun.serve() がやってた。
