@@ -30,3 +30,9 @@ bun start
 ```
 
 This project was created using `bun init` in bun v1.4.0. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+
+## TODO
+
+bun だけだと バンドルの minify なんかがやっぱり甘いような気がする。
+
+でもなんか同時にAPIっぽいものが動いてるのは不思議。
