@@ -1,4 +1,15 @@
-# bun-react-template
+# react-bun1
+
+2026-08にbun 1.4を記念して
+
+```sh
+mkdir react-bun1 && cd !$
+bun init --react
+```
+
+で作ったテストプロジェクト。
+
+## 開発
 
 To install dependencies:
 
