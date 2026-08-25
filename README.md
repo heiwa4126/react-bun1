@@ -44,6 +44,15 @@ bun run build
 bun run preview
 ```
 
+### ビルドのコマンドが長すぎるので
+
+`./build.ts` にした。もとは `bun run build-cli` で、そこから以下の機能を追加
+
+- dist/ を消す
+- sourcemap 作らない
+- esm.sh で一部モジュールを CDN から読むテスト (index.html は手動)
+- `console.log()` や `debug()` をバンドル時に消す
+
 ## TODO
 
 bun だけだとバンドルのツリーシェイキングや minify なんかが甘いような気がする。
