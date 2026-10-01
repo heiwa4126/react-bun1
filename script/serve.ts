@@ -1,6 +1,6 @@
 import { apiRoutes } from "../src/apiRoutes.ts";
 
-const hostname = "0.0.0.0";
+const hostname = "localhost";
 const port = 3000;
 
 const server = Bun.serve({
